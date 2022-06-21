@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>ispacem 🪐</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="quit.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+</head> 
+<body>  
+    <header>
+        <h1><spanA>i</spanA>spacem 🪐</h1>
+            <nav>
+                <ul id="menuList">
+               <li><a href="quit.html">Home</a></li>
+               <li><a href="about3.html">About us</a></li>
+               <li><a href="camp.html">Camp</a></li>
+               <li><a href="#">Info</a></li>
+               <li><a href="#">Online school</a></li>
+               <li><a href="#">Community</a></li>
+               <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <label id="icon">
+ <div class="container" onclick="togglemenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</label>
+    </header>
+    
+    
+    
+    <script>
+    var menuList = document.getElementById("menuList");
+    
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "800px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+    
+    
+    <section class="quit">
+        <div class="row">
+            <div class="comp">
+                <h1>Space academy for</h1>
+                <h2>learning and opening</h2>
+                <h3>new planets from</h3>
+                <h4>information technology</h4>
+                <p>Start studying with us and get more chances to develop and create new planets...</p>
+            </div>
+            <div class="button">
+                <a href="#">Start now</a>
+            </div>
+            
+            <div class="img">
+                <img src="bg2.png">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="about">
+        <h1>Fly to sky 🪐</h1>
+        <p>You have more choosings:</p>
+        
+        <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-1" id="song-1">
+      <div class="words">
+          <h1><spanA>Community</spanA></h1>
+          <h2>Working together</h2>
+          <h3>Smarters club</h3>
+          <h4>Young CEO founders</h4>
+          <img src="community.png">
+      </div>
+    </label>
+    <label class="card" for="item-2" id="song-2">
+      <div class="words">
+          <h1><spanB>Security</spanB></h1>
+          <h2>Safety area</h2>
+          <h3>Strong activation</h3>
+          <h4>Easy connecting</h4>
+          <img src="security.png">
+      </div>
+    </label>
+    <label class="card" for="item-3" id="song-3">
+      <div class="words">
+          <h1><spanC>Academy</spanC></h1>
+          <h2>High knowledge</h2>
+          <h3>New code method</h3>
+          <h4>Students teams</h4>
+          <img src="about.png">
+      </div> 
+    </label>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+  
+  <h5>Always study on your self, and get more knowledge. Never forget that: Do all actions and things with your power!!!</h5>
+  <a href="#">Know more</a>
+    </section>
+    
+    
+    <section class="about2">
+        <h1>Space academy plans:</h1>
+        <p>This summer will be the best month</p>
+<div class="content">
+    <div class="accordion">
+      <div class="accordion__item">
+        <div class="accordion__header">Space camp</div>
+        <div class="accordion__body">
+          <p>In space camp our students can relax and get more enjoyable moments with our academy online camp 🚀</p>
+        </div>
+      </div>
+     <div class="accordion__item">
+        <div class="accordion__header">Space library</div>
+        <div class="accordion__body">
+          <p>We have big online library for our students and Library has more necessary knowledge. And big ideas in social network 📚</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__header">Competitions</div>
+        <div class="accordion__body">
+          <p>We will start to our competitions which is created for developers. There is 3 types of challenging. Testing, Questions, Coding speed 🏆</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__header">Space intelligence</div>
+        <div class="accordion__body">
+          <p>This is one of the main platform in our academy. Which is famous with working methods for CEO young developers 🧬</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+    $('.accordion__header').click(function() {
+        
+        $(".accordion__body").not($(this).next()).slideUp(150);
+        $(this).next().slideToggle(150);
+        
+        $(".accordion__item").not($(this).closest(".accordion__item")).removeClass("open-accordion");
+        $(this).closest(".accordion__item").toggleClass("open-accordion");
+    });
+});
+    </script>
+
+    </section>
+    
+    
+    <section class="more">
+        <h1>Online camp</h1>
+        <p>Young developers atmosphere</p>
+        <div class="row3">
+            <div class="box">
+                <div class="word">
+                    <h1>Camp</h1>
+                   <h2>Online traveling</h2>
+                  <h3>Online challenges</h3>
+                 <h4>Developer presents</h4>
+                </div>
+                <img src="camp.png">
+                <a href="register.html">Register now</a>
+            </div>
+            <div class="boxd">
+        <p id="demo"></p>
+        </div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date( "July 20, 2022 08:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "STARTED";
+  }
+}, 1000);
+</script>
+        </div>
+    </section>
+    
+    
+    
+    <footer>
+        <ul class="first">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About website</a></li>
+            <li><a href="#">About Developer</a></li>
+           <li><a href="#">Questions</a></li>
+        </ul>
+        
+        <ul class="second">
+            <li><a href="#">Camp</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Privacy policy</a></li>
+        </ul>
+        
+        <ul class="third">
+            <li><a href="#">License</a></li>
+            <li><a href="#">Academy structure</a></li>
+            <li><a href="#">Actions</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        <div class="down"><p>©2022 ispacem academy. All rights reserved</p></div>
+    </footer>
+    
+    
+    
+    <div class="loader">
+        <div class="loadi"></div>
+        <h1><spanA>i</spanA>spacem 🪐</h1>
+    </div>
+    <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("show")
+            });
+        </script> 
